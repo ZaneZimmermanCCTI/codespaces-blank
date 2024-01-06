@@ -82,5 +82,18 @@ async def bonk(user: User) -> str:
 
 async def squiddy(user:User) -> str:
     squid_mess = [
-        "NOVEMBER 12th, 2036: THE HEAT DEATH OF THE UNIVERSE! {}, YOUR RECKONING WILL BEFALL YOU!",
+        ": NOVEMBER 12th, 2036: THE HEAT DEATH OF THE UNIVERSE! {}, YOUR RECKONING WILL BEFALL YOU!",
     ]
+
+    return random.choice(squid_mess).format(user.displayname)
+
+async def kwispy(user:User) -> str:
+    kwispy_mess = [
+        "sets {} on fire.",
+        "sets {} alight with his magic butane blaster.",
+        "introduces {} to the complex process of combustion.",
+        "proceeds to melt {}'s face off.",
+        "lights {} on fire with some good ol' fasioned matches.",
+    ]
+
+    return random.choice(kwispy_mess).format(user.displayname)

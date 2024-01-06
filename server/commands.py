@@ -51,6 +51,17 @@ async def process_command(db: Database, message: str, user: User) -> str | None:
 
             return message
         
+        case "kwispy":
+            to_kwispy = await get_user_from_mention(db, message)
+
+            if to_kwispy is None:
+                return None
+            
+            message = await kwispy(to_kwispy)
+
+            return message
+        
+        
     return None
 
 

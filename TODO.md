@@ -7,3 +7,6 @@
 ## Ideas
 - [ ] Switch from aiohttp 
 - [ ] Implement different channels
+
+## For Zane
+- [ ] Learn how to use GitHub codespaces, ya bitch-turkey

@@ -1,4 +1,4 @@
-const BASE_URL = "https://supreme-space-cod-559xx465xr6h4vr5-5000.app.github.dev/";
+const BASE_URL = "https://potential-space-broccoli-v4jq9v97wg7hpq4v-5000.app.github.dev/";
 
 if (document.cookie.includes("token") && document.cookie.split("token=")[1].split(";")[0] !== "") {
     window.location.replace("/app");

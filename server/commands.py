@@ -31,15 +31,15 @@ async def process_command(db: Database, message: str, user: User) -> str | None:
 
             return message
         
-        case "suck":
-            to_suck = await get_user_from_mention(db, message)
+        # case "suck":
+        #     to_suck = await get_user_from_mention(db, message)
 
-            if to_suck is None:
-                return None
+        #     if to_suck is None:
+        #         return None
             
-            message = await suck(to_suck)
+        #     message = await suck(to_suck)
 
-            return message
+        #     return message
         
         case "squiddy":
             to_squid = await get_user_from_mention(db, message)
@@ -47,7 +47,7 @@ async def process_command(db: Database, message: str, user: User) -> str | None:
             if to_squid is None:
                 return None
             
-            message = await suck(to_squid)
+            message = await squiddy(to_squid)
 
             return message
         
@@ -73,14 +73,14 @@ async def bonk(user: User) -> str:
     return random.choice(bonk_messages).format(user.displayname)
 
 
-async def suck(user: User) -> str:
-    suck_messages = [
-        "sucks off {}",
-    ]
+# async def suck(user: User) -> str:
+#     suck_messages = [
+#         "sucks off {}",
+#     ]
 
-    return random.choice(suck_messages).format(user.displayname)
+    # return random.choice(suck_messages).format(user.displayname)
 
-async def squiddy(user: User) -> str:
+async def squiddy(user:User) -> str:
     squid_mess = [
         "NOVEMBER 12th, 2036: THE HEAT DEATH OF THE UNIVERSE! {}, YOUR RECKONING WILL BEFALL YOU!",
     ]

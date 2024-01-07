@@ -13,3 +13,4 @@
 
 ## For Zane
 - [ ] Learn how to use GitHub codespaces, ya bitch-turkey
+- [ ] Actually, just learn git in general. You have no idea what Noah is talking about.

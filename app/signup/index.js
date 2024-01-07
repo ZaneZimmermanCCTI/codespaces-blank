@@ -1,5 +1,7 @@
 const BASE_URL = "https://potential-space-broccoli-v4jq9v97wg7hpq4v-5000.app.github.dev/";
 
+document.addEventListener("keypress", onEvent);
+
 if (document.cookie.includes("token") && document.cookie.split("token=")[1].split(";")[0] !== "") {
     window.location.replace("/app");
 }
@@ -51,4 +53,10 @@ function signUp() {
         alert("Something went wrong.")
     }
     );
+}
+
+function onEvent(event) {
+    if(event.keyCode=== 13) {
+        signUp();
+    }
 }

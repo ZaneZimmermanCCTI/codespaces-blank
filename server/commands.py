@@ -93,7 +93,7 @@ async def bonk(user: User) -> str:
 
 async def squiddy(user:User) -> str:
     squid_mess = [
-        ": NOVEMBER 12th, 2036: THE HEAT DEATH OF THE UNIVERSE! {}, YOUR RECKONING WILL BEFALL YOU!",
+        ": AUGUST 12th, 2036: THE HEAT DEATH OF THE UNIVERSE! {}, YOUR RECKONING WILL BEFALL UPON YOU!",
     ]
 
     return random.choice(squid_mess).format(user.displayname)
